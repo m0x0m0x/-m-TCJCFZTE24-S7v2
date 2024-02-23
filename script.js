@@ -60,6 +60,7 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".message").textContent = "🤬RAPED";
       document.querySelector(".message").classList.add("message-lost");
       document.querySelector("body").style.backgroundColor = "#450a0a";
+      document.querySelector("h1").textContent = "☠️☠️☠️☠️☠️";
     }
 
     // When too low
