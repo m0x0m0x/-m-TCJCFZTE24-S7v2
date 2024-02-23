@@ -120,8 +120,8 @@ h1 {
   height: 1rem;
   text-align: center;
   color: #10b981;
-  background-color: #10b9817a;
-  /* padding: 2rem 2rem; */
+  background-color: #0534247a;
+  padding: 7dvh;
 }
 
 .label-score {

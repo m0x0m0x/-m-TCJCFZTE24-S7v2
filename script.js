@@ -21,6 +21,8 @@
 const numberPussy = Math.trunc(Math.random() * 20) + 1;
 document.querySelector(".number").textContent = numberPussy;
 
+// Increasing and decreasing the score
+
 document.querySelector(".check").addEventListener("click", function () {
   // This statemetn will grab the value which inside the guess class
   const guess = Number(document.querySelector(".guess").value);
@@ -31,7 +33,14 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess === numberPussy) {
     document.querySelector(".message").textContent = "FUCKALLNIGHT";
     document.querySelector(".message").classList.add("message-success");
+  } else if (guess > numberPussy) {
+    document.querySelector(".message").textContent = "TO HIGH FAG";
+    document.querySelector(".message").classList.remove("message-success");
+  } else if (guess < numberPussy) {
+    document.querySelector(".message").textContent = "TO LOW BITCH";
+    document.querySelector(".message").classList.remove("message-success");
   }
+
   // This is for you reference
   console.log(`
   How many suck like her ass ? :- 
