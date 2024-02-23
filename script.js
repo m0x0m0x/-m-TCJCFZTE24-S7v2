@@ -12,5 +12,8 @@
 // document.querySelector(".score").textContent = 10;
 
 // // Change the input field
-document.querySelector(".guess").value = 23;
-console.log(document.querySelector(".guess").value);
+// document.querySelector(".guess").value = 69;
+// console.log(document.querySelector(".guess").value);
+
+// Setting the function on check button L20 index.html
+document.querySelector(".check").addEventListener("click");
