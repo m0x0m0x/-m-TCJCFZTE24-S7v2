@@ -19,11 +19,11 @@
 
 // Definition ot the secret number
 const numberPussy = Math.trunc(Math.random() * 20) + 1;
-document.querySelector(".number").textContent = numberPussy;
 
 // Increasing and decreasing the score - Also called state variable
 let scorePanty = 20;
 
+// Implementing Game Functionality
 document.querySelector(".check").addEventListener("click", function () {
   // This statemetn will grab the value which inside the guess class
   const guess = Number(document.querySelector(".guess").value);
@@ -38,6 +38,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").classList.add("message-success");
     scorePanty++;
     document.querySelector(".score").textContent = scorePanty;
+    document.querySelector(".number").textContent = numberPussy;
 
     // Targeting body styles
     document.querySelector("body").style.backgroundColor = "#052e16";
@@ -84,4 +85,27 @@ document.querySelector(".check").addEventListener("click", function () {
   How many suck like her ass ? :- 
   ${document.querySelector(".guess").value}
   ${typeof guess}`);
+});
+
+//implementing reset functionality
+document.querySelector(".again").addEventListener("click", function () {
+  // Restoring initial variables
+  document.querySelector(".score").textContent = 0;
+  document.querySelector(".number").textContent = "?";
+
+  // Restoring initial conditions of -
+  // message, number, score, guess input field
+
+  // Message
+  document.querySelector(".message").textContent = "Start guessing....";
+  document.querySelector(".message").classList.remove("message-lost");
+  document.querySelector(".message").classList.remove("message-success");
+  document.querySelector(".guess").value = " ";
+
+  //  Color restore and width
+  document.querySelector("body").style.backgroundColor = "";
+  document.querySelector(".number").style.backgroundColor = "";
+  document.querySelector(".number").style.color = "";
+  document.querySelector(".number").style.width = "";
+  document.querySelector(".number").style.border = "";
 });
