@@ -33,11 +33,21 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "❌Bastard Put Something";
     // Starting tests below
   } else if (guess === numberPussy) {
-    // Sucsess
+    // Success
     document.querySelector(".message").textContent = "FUCKALLNIGHT";
     document.querySelector(".message").classList.add("message-success");
     scorePanty++;
     document.querySelector(".score").textContent = scorePanty;
+
+    // Targeting body styles
+    document.querySelector("body").style.backgroundColor = "#052e16";
+    document.querySelector(".number").style.backgroundColor = "#052e16";
+    document.querySelector(".number").style.color = "#10b981";
+    document.querySelector(".number").style.width = "25rem";
+    document.querySelector(".number").style.border = "10px dotted";
+    document.querySelector("h1").textContent = "Drink Her Piss";
+
+    // When too high
   } else if (guess > numberPussy) {
     // Sub condition - If
     if (scorePanty > 1) {
@@ -49,7 +59,10 @@ document.querySelector(".check").addEventListener("click", function () {
     } else {
       document.querySelector(".message").textContent = "🤬RAPED";
       document.querySelector(".message").classList.add("message-lost");
+      document.querySelector("body").style.backgroundColor = "#450a0a";
     }
+
+    // When too low
   } else if (guess < numberPussy) {
     if (scorePanty > 1) {
       document.querySelector(".message").textContent = "😡TOO LOW BITCH";
@@ -60,6 +73,7 @@ document.querySelector(".check").addEventListener("click", function () {
     } else {
       document.querySelector(".message").textContent = "🤬RAPED";
       document.querySelector(".message").classList.add("message-lost");
+      document.querySelector("body").style.backgroundColor = "#450a0a";
     }
   }
 
