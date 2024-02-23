@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  transition: all 300ms;
 }
 
 html {
@@ -112,6 +113,15 @@ h1 {
 .message {
   margin-bottom: 8rem;
   height: 3rem;
+}
+
+.message-success {
+  margin-bottom: 2rem;
+  height: 1rem;
+  text-align: center;
+  color: #10b981;
+  background-color: #10b9817a;
+  /* padding: 2rem 2rem; */
 }
 
 .label-score {

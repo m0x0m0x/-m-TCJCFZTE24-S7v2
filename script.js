@@ -19,7 +19,7 @@
 
 // Definition ot the secret number
 const numberPussy = Math.trunc(Math.random() * 20) + 1;
-document.querySelector(".number").textContents = numberPussy;
+document.querySelector(".number").textContent = numberPussy;
 
 document.querySelector(".check").addEventListener("click", function () {
   // This statemetn will grab the value which inside the guess class
@@ -28,8 +28,10 @@ document.querySelector(".check").addEventListener("click", function () {
 
   if (!guess) {
     document.querySelector(".message").textContent = "❌Bastard Put Something";
+  } else if (guess === numberPussy) {
+    document.querySelector(".message").textContent = "FUCKALLNIGHT";
+    document.querySelector(".message").classList.add("message-success");
   }
-
   // This is for you reference
   console.log(`
   How many suck like her ass ? :- 
