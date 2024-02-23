@@ -121,7 +121,16 @@ h1 {
   text-align: center;
   color: #10b981;
   background-color: #0534247a;
-  padding: 7dvh;
+  padding: 7rem;
+}
+
+.message-lost {
+  margin-bottom: 2rem;
+  height: 1rem;
+  text-align: center;
+  color: #b9103a;
+  background-color: rgba(213, 28, 241, 0.478);
+  padding: 7rem;
 }
 
 .label-score {
