@@ -22,6 +22,7 @@ const numberPussy = Math.trunc(Math.random() * 20) + 1;
 
 // Increasing and decreasing the score - Also called state variable
 let scorePanty = 20;
+let highscore = 0;
 
 // Implementing Game Functionality
 document.querySelector(".check").addEventListener("click", function () {
@@ -47,6 +48,11 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".number").style.width = "25rem";
     document.querySelector(".number").style.border = "10px dotted";
     document.querySelector("h1").textContent = "Drink Her Piss";
+
+    if (scorePanty > highscore) {
+      highscore = scorePanty;
+      document.querySelector(".highscore").textContent = highscore;
+    }
 
     // When too high
   } else if (guess > numberPussy) {
@@ -89,8 +95,11 @@ document.querySelector(".check").addEventListener("click", function () {
 
 //implementing reset functionality
 document.querySelector(".again").addEventListener("click", function () {
+  scorePanty = 20;
+  const numberPussy = Math.trunc(Math.random() * 20) + 1;
+
   // Restoring initial variables
-  document.querySelector(".score").textContent = 0;
+  document.querySelector(".score").textContent = scorePanty;
   document.querySelector(".number").textContent = "?";
 
   // Restoring initial conditions of -
@@ -108,4 +117,5 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").style.color = "";
   document.querySelector(".number").style.width = "";
   document.querySelector(".number").style.border = "";
+  document.querySelector("h1").textContent = "";
 });
