@@ -16,6 +16,11 @@
 // console.log(document.querySelector(".guess").value);
 
 // Setting the function on check button L20 index.html
+
+// Definition ot the secret number
+const numberPussy = Math.trunc(Math.random() * 20) + 1;
+document.querySelector(".number").textContents = numberPussy;
+
 document.querySelector(".check").addEventListener("click", function () {
   // This statemetn will grab the value which inside the guess class
   const guess = Number(document.querySelector(".guess").value);
@@ -25,6 +30,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "❌Bastard Put Something";
   }
 
+  // This is for you reference
   console.log(`
   How many suck like her ass ? :- 
   ${document.querySelector(".guess").value}
