@@ -19,10 +19,22 @@
 
 // Definition ot the secret number
 const numberPussy = Math.trunc(Math.random() * 20) + 1;
+console.log(
+  ` %c
+Random Generated Number - [ ${numberPussy} ]
+`,
+  "color: #15F5BA"
+);
 
 // Increasing and decreasing the score - Also called state variable
 let scorePanty = 20;
 let highscore = 0;
+
+// Function for displayMessage refactoring occurrences for
+// document.querySelector(".message").textContent
+const displayMessage = function (message) {
+  document.querySelector(".message").textContent = message;
+};
 
 // Implementing Game Functionality
 document.querySelector(".check").addEventListener("click", function () {
@@ -32,12 +44,14 @@ document.querySelector(".check").addEventListener("click", function () {
 
   // Display error when nothing entered
   if (!guess) {
-    document.querySelector(".message").textContent = "❌Bastard Put Something";
+    // document.querySelector(".message").textContent = "❌Bastard Put Something";
+    displayMessage("❌Bastard Put Something");
 
     // Starting tests below -- Change color scheme on success
   } else if (guess === numberPussy) {
     // Success
-    document.querySelector(".message").textContent = "FUCKALLNIGHT";
+    // document.querySelector(".message").textContent = "FUCKALLNIGHT";
+    displayMessage("FUCK 👠ALL 👠NIGHT");
     document.querySelector(".message").classList.add("message-success");
     scorePanty++;
     document.querySelector(".score").textContent = scorePanty;
@@ -69,7 +83,8 @@ document.querySelector(".check").addEventListener("click", function () {
       scorePanty--;
       document.querySelector(".score").textContent = scorePanty;
     } else {
-      document.querySelector(".message").textContent = "🤬RAPED";
+      // document.querySelector(".message").textContent = "🤬RAPED";
+      displayMessage("🤬RAPED");
       document.querySelector(".message").classList.add("message-lost");
       document.querySelector("body").style.backgroundColor = "#450a0a";
       document.querySelector("h1").textContent = "☠️☠️☠️☠️☠️";
@@ -115,7 +130,8 @@ document.querySelector(".again").addEventListener("click", function () {
   // message, number, score, guess input field
 
   // Message
-  document.querySelector(".message").textContent = "Start guessing....";
+  // document.querySelector(".message").textContent = "Start guessing....";
+  displayMessage("Start guessing....");
   document.querySelector(".message").classList.remove("message-lost");
   document.querySelector(".message").classList.remove("message-success");
   document.querySelector(".guess").value = " ";
