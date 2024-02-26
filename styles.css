@@ -14,8 +14,8 @@ html {
 
 body {
   font-family: "Press Start 2P", sans-serif;
-  color: #eee;
-  background-color: #222;
+  color: #05f2db;
+  background-color: #021526;
   /* background-color: #60b347; */
 }
 
@@ -23,12 +23,12 @@ body {
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px solid #eee;
+  border-bottom: 7px solid #05f2db;
 }
 
 main {
   height: 65vh;
-  color: #eee;
+  color: #815da6;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -58,7 +58,7 @@ h1 {
 }
 
 .number {
-  background: #eee;
+  background: #f2b441;
   color: #333;
   font-size: 6rem;
   width: 15rem;
@@ -85,7 +85,7 @@ h1 {
 
 .guess {
   background: none;
-  border: 4px solid #eee;
+  border: 4px solid #f2b441;
   font-family: inherit;
   color: inherit;
   font-size: 5rem;
@@ -96,10 +96,15 @@ h1 {
   margin-bottom: 3rem;
 }
 
+.guess:hover {
+  border: 2px dotted #f2b441;
+}
+
 .btn {
   border: none;
-  background-color: #eee;
-  color: #222;
+  border-radius: 50px;
+  background-color: #3f3ca6;
+  color: #0bd9d9;
   font-size: 2rem;
   font-family: inherit;
   padding: 2rem 3rem;
@@ -107,7 +112,9 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: #1d1340;
+  padding: 3rem;
+  letter-spacing: 1rem;
 }
 
 .message {
