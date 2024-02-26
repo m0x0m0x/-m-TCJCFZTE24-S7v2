@@ -75,9 +75,12 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess != numberPussy) {
     // When too high
     if (scorePanty > 1) {
-      document.querySelector(".message").textContent =
-        //ternary operatoror
-        guess > numberPussy ? "🤬TOO HIGH FAG" : "😡TOO LOW BITCH";
+      // document.querySelector(".message").textContent =
+      //ternary operatoror
+      // guess > numberPussy ? "🤬TOO HIGH FAG" : "😡TOO LOW BITCH";
+      displayMessage(
+        guess > numberPussy ? "🤬TOO HIGH FAG" : "😡TOO LOW BITCH"
+      );
       document.querySelector(".message").classList.remove("message-success");
       // When guess to high subtract 1
       scorePanty--;
