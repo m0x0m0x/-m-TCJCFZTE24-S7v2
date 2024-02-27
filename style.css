@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  transition: all 400ms;
 }
 
 html {
@@ -39,7 +40,6 @@ body {
   color: #dacc3e;
   border-radius: 10rem;
   cursor: pointer;
-  transition: all 200ms;
 }
 
 .show-modal:hover {
