@@ -4,5 +4,6 @@
 
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/m0x0m0x/-m-TCJCFZTE24-S7v2)
 
+# Project Resources
 
-Project 2 
+[`https://github.com/jonasschmedtmann/complete-javascript-course`](https://github.com/jonasschmedtmann/complete-javascript-course) - Source of files
