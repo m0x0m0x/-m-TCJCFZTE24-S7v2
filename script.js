@@ -26,3 +26,12 @@ for (let i = 0; i < btnsShowModal.length; i++) {
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
+
+// Using escape key event
+document.addEventListener("keydown", function (e) {
+  // console.log(e.key);
+  // e.key === "Escape" ? console.log("Fucker") : console.log("no");
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
