@@ -18,7 +18,16 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(
+    to top left,
+    #591c21,
+    #044040,
+    #591c21,
+    #044040,
+    #591c21,
+    #044040,
+    #591c21
+  );
 }
 
 .show-modal {
@@ -26,11 +35,16 @@ body {
   font-weight: 600;
   padding: 1.75rem 3.5rem;
   margin: 5rem 2rem;
-  border: none;
-  background-color: #fff;
-  color: #444;
+  background-color: #013440;
+  color: #dacc3e;
   border-radius: 10rem;
   cursor: pointer;
+  transition: all 200ms;
+}
+
+.show-modal:hover {
+  outline: 1px solid #dacc3e;
+  box-shadow: 10px 10px 63px 0px rgba(197, 232, 0, 1);
 }
 
 .close-modal {
@@ -66,11 +80,13 @@ p {
   transform: translate(-50%, -50%);
   width: 70%;
 
-  background-color: white;
+  background-color: #400036;
+  color: #ff81d0;
   padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: 10px 10px 63px 0px #ff81d0;
   z-index: 10;
+  text-align: center;
 }
 
 .overlay {

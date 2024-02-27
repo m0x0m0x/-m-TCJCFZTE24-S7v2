@@ -8,5 +8,12 @@ const btnCloseModal = document.querySelector(".close-modal");
 // Selecting modals with the same name
 const btnsShowModal = document.querySelectorAll(".show-modal");
 for (let i = 0; i < btnsShowModal.length; i++) {
-  console.log(btnsShowModal[i].textContent);
+  btnsShowModal[i].textContent = "👃Sniff";
+  btnsShowModal[i].addEventListener("click", function () {
+    console.log("ButtonRaped");
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  });
+
+  // Adding an event-handler
 }
